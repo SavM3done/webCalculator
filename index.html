@@ -14,38 +14,38 @@
         <div id="buttons">
 
           <div class="top">
-            <button id="C">C</button>
-            <button id="parenthesys">()</button>
-            <button id="pow">x²</button>
-            <button id="divide" class="operator">/</button>
+            <button id="C" onclick="clearDisplay('C')">C</button>
+            <button id="parenthesys" onclick="enterParenthesys()">()</button>
+            <button id="pow" onclick="powResult()">x²</button>
+            <button id="divide" class="operator" onclick="enterValue('/', 'divide')">/</button>
           </div>
 
           <div>
-            <button id="7" class="number">7</button>
-            <button id="8" class="number">8</button>
-            <button id="9" class="number">9</button>
-            <button id="mult" class="operator">*</button>
+            <button id="7" class="number" onclick="enterValue('7')">7</button>
+            <button id="8" class="number" onclick="enterValue('8')">8</button>
+            <button id="9" class="number" onclick="enterValue('9')">9</button>
+            <button id="mult" class="operator" onclick="enterValue('*', 'mult')">*</button>
           </div>
 
           <div>
-            <button id="4" class="number">4</button>
-            <button id="5" class="number">5</button>
-            <button id="6" class="number">6</button>
-            <button id="min" class="operator">−</button>
+            <button id="4" class="number" onclick="enterValue('4')">4</button>
+            <button id="5" class="number" onclick="enterValue('5')">5</button>
+            <button id="6" class="number" onclick="enterValue('6')">6</button>
+            <button id="min" class="operator" onclick="enterValue('-', 'min')">−</button>
           </div>
 
           <div>
-            <button id="1" class="number">1</button>
-            <button id="2" class="number">2</button>
-            <button id="3" class="number">3</button>
-            <button id="plus" class="operator">+</button>
+            <button id="1" class="number" onclick="enterValue('1')">1</button>
+            <button id="2" class="number" onclick="enterValue('2')">2</button>
+            <button id="3" class="number" onclick="enterValue('3')">3</button>
+            <button id="plus" class="operator" onclick="enterValue('+', 'plus')">+</button>
           </div>
 
           <div>
-            <button id="00" class="number">00</button>
-            <button id="0" class="number">0</button>
-            <button id="point" class="number">.</button>
-            <button id="equal" class="equal">=</button>
+            <button id="00" class="number" onclick="enterValue('00')">00</button>
+            <button id="0" class="number" onclick="enterValue('0')">0</button>
+            <button id="point" class="number" onclick="enterValue('.', 'point')">.</button>
+            <button id="equal" class="equal" onclick="calculateResult()">=</button>
           </div>
         </div>
       </div>
